@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <!--<UserSecretsId>SimpleApiWithHttpsAndDocker-53dd38b0-abd2-40fc-ae2f-bc071399ddb5</UserSecretsId>-->
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DockerFile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Dockerfile" />
+  </ItemGroup>
 
 </Project>

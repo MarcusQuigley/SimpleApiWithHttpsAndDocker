@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  simpleapiwithhttpsanddocker:
+    image: ${DOCKER_REGISTRY-}marcus/simpleapiwithhttpsanddocker
+    build: SimpleApiWithHttpsAndDocker
+    ports:
+    - "5050:80"
+    - "5051:443"
+    environment: 
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTPS_PORT: "5051"
+      ASPNETCORE_ENVIRONMENT: "Development"
+    volumes:
+      - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
+      - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/

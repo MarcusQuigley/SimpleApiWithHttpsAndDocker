@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <!--<UserSecretsId>SimpleApiWithHttpsAndDocker-0e9c4137-ddf6-4f3c-a408-4f8ccb1c4880</UserSecretsId>-->
+    <UserSecretsId>SimpleApiWithHttpsAndDocker-0e9c4137-ddf6-4f3c-a408-4f8ccb1c4880</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
    </PropertyGroup>
 
